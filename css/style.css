@@ -1,44 +1,47 @@
 body{
     background-image: url("../images/background.jpg");
     background-size: cover;
-    
 }
-#title{
-    text-align: center;
-    text-decoration: underline;
-}
-
-#formulaire{
-    margin:0px auto;
-    width:50%;
-    background-color: #ddd;
-    padding: 10px;
-}
-
-#nom,#prenoms,#date,#telephone,#description{
-   
-    padding: 10px;
-    width:97%;
-}
-#nom{
-    margin-bottom: 20px;
-}
-#date,#telephone,#soumettre{
-    margin-top:20px;
-}
-input[type='radio']{
-    margin: 20px;
-}
-input[type='textarea']{
+#container{
+    margin:10px auto;
     width: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+.form-control{
+    width: 96%;
+    padding: 10px;
+}
+.form-group{
+    margin:20px;
+}
+#genre,#status{
+    margin-left:20px;
+}
+#status{
+    margin-top: 15px;
 }
 #soumettre{
-    padding: 15px 20px;
-    background-color:#856ADD;
-    border:none;
-    color:#fff;
+    padding: 10px;
+    border: none;
 }
-.error-class{
+.description-error,
+.name-error,
+.firstname-error,
+.birthday-error,
+.gender-error,
+.phone-error,
+.status-error
+{
     color:red;
+    font-weight: bold;
+}
+.description-error,
+.phone-error{
+    padding: 18px 0px 0px 0px;
+}
+.success{
+    text-align: center;
+    color: #000;
     font-weight: bold;
 }
